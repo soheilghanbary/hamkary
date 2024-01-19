@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,6 +19,22 @@
       }
     ],
     "paths": {
+      "@modules/*": ["./src/components/modules/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@helpers/*": ["./src/helpers/*"],
+      "@api/*": ["./src/app/api/*"],
+      "@config/*": ["./src/config/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@services/*": ["./src/services/*"],
+      "@schemas/*": ["./src/schemas/*"],
+      "@server/*": ["./src/server/*"],
+      "@ui/*": ["./src/components/ui/*"],
+      "@components/*": ["./src/components/*"],
+      "@contexts/*": ["./src/contexts/*"],
+      "@actions/*": ["./src/actions/*"],
+      "@atoms/*": ["./src/atoms/*"],
       "@/*": ["./src/*"]
     }
   },
