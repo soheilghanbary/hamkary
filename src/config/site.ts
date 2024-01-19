@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "Insta",
-  title: "Insta",
-  description: "a modern instagram clone made by best web technologies",
+  name: "همکاری",
+  title: "همکاری",
+  description: "پلتفرم کاریابی توسعه دهندگان",
   links: {
     twitter: "https://twitter.com/soli_ghanbary",
     github: "https://github.com/soheilghanbary",

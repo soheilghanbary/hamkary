@@ -1,0 +1,27 @@
+.header {
+  @apply border-b;
+}
+
+.navbar {
+  @apply container mx-auto flex items-center justify-between gap-3 p-4;
+}
+
+.nav-links {
+  @apply flex flex-1 items-center justify-end gap-2;
+
+  a {
+    @apply rounded-md px-4 py-2 text-sm font-medium text-muted-foreground duration-100;
+
+    &:hover {
+      @apply bg-primary/5 text-foreground;
+    }
+  }
+}
+
+.logo {
+  @apply flex items-center gap-2;
+
+  h3 {
+    @apply text-lg font-extrabold text-primary;
+  }
+}
