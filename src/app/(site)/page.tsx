@@ -70,7 +70,7 @@ const Services = () => (
 
 const ServiceCard = () => {
   return (
-    <div className="flex cursor-pointer flex-col items-center justify-center space-y-4 rounded-lg border p-6 shadow-sm ring-2 ring-background ring-offset-4 ring-offset-background duration-300 hover:scale-105 hover:ring-primary">
+    <div className="flex cursor-pointer flex-col items-center justify-center space-y-4 rounded-lg border bg-background p-6 shadow-sm ring-primary duration-150 hover:ring-2">
       <icons.github className="size-7" />
       <h2 className="text-xl font-semibold">مدرن و ساده</h2>
       <p className="text-sm leading-6 text-foreground/80 md:text-base">

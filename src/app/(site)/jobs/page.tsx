@@ -1,6 +1,6 @@
 import { TextField } from "@components/common/TextField"
 import { Button } from "@ui/button"
-import { DollarCircle, MapPin, Suitcase } from "iconoir-react"
+import { Bookmark, City, DollarCircle, MapPin, Suitcase } from "iconoir-react"
 
 import {
   Select,
@@ -13,8 +13,8 @@ import {
 export default function JobsPage() {
   return (
     <section className="space-y-8">
-      <div className="flex gap-8">
-        <aside className="w-60 space-y-4">
+      <div className="flex gap-4">
+        <aside className="sticky top-20 h-fit w-60 space-y-4 rounded-lg border bg-background p-4 shadow-sm">
           <h1 className="text-2xl font-bold text-primary">مشاغل</h1>
           <TextField label="عنوان شغل" />
           <TextField label="محل سکونت" />
@@ -37,6 +37,12 @@ export default function JobsPage() {
           <JobCard />
           <JobCard />
           <JobCard />
+          <JobCard />
+          <JobCard />
+          <JobCard />
+          <JobCard />
+          <JobCard />
+          <JobCard />
         </div>
       </div>
     </section>
@@ -45,13 +51,17 @@ export default function JobsPage() {
 
 const JobCard = () => {
   return (
-    <div className="flex cursor-pointer gap-4 space-y-4 rounded-lg border p-6 shadow-sm">
-      <div className="size-24 rounded-lg bg-secondary"></div>
-      <div className="space-y-2">
+    <div className="relative flex cursor-pointer gap-4 space-y-4 rounded-lg border bg-background p-5 shadow-sm">
+      <div className="size-24 rounded-lg bg-secondary/50"></div>
+      <div className="flex-1 space-y-2">
         <h2 className="text-balance text-base font-medium">
           برنامه نویس فرانت اند (Middle React.JS)
         </h2>
         <div className="space-y-1.5">
+          <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground [&>p]:pt-0.5">
+            <City className="size-4" />
+            <p>شرکت کیان تلکام</p>
+          </div>
           <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground [&>p]:pt-0.5">
             <MapPin className="size-4" />
             <p>ایران، یزد</p>
@@ -65,9 +75,15 @@ const JobCard = () => {
             <p>34,000,000 تومان / ماهانه</p>
           </div>
         </div>
-        <div className="flex gap-2">
+        <p className="absolute bottom-3.5 right-3.5 text-xs text-muted-foreground">
+          3 روز پیش
+        </p>
+        <div className="flex justify-end gap-2">
           <Button>ارسال رزومه</Button>
-          <Button variant={"outline"}>نشان کردن</Button>
+          <Button variant={"outline"}>
+            <Bookmark className="ml-2 size-4" />
+            <span className="pt-0.5">نشان کردن</span>
+          </Button>
         </div>
       </div>
     </div>

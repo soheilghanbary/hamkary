@@ -36,7 +36,7 @@ export default function RootLayout({
         <link rel="theme-color" href="#14B8A6" />
       </head>
       <body
-        className={cn("min-h-screen bg-background antialiased", font.className)}
+        className={cn("min-h-screen antialiased", font.className)}
         suppressHydrationWarning
       >
         <EdgeStoreProvider>

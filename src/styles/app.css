@@ -57,7 +57,8 @@
     -webkit-tap-highlight-color: transparent;
   }
   body {
-    @apply bg-background text-foreground;
+    /* @apply bg-background text-foreground; */
+    @apply bg-[#fafafa] dark:bg-background text-foreground;
   }
 }
 
