@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Button } from "@ui/button"
+import { Github, Google } from "iconoir-react"
 import { signIn } from "next-auth/react"
 
 import { Icons } from "./icons"
@@ -27,11 +28,11 @@ export const UserOAuth = () => {
         onClick={() => onAuth("github")}
       >
         {loading.github ? (
-          <Icons.spinner className="mr-2 size-4 animate-spin" />
+          <Icons.spinner className="ml-2 size-5 animate-spin" />
         ) : (
-          <Icons.gitHub className="mr-2 size-4" />
+          <Github className="ml-2 size-5" />
         )}
-        Github
+        گیت ها
       </Button>
       <Button
         variant={"secondary"}
@@ -39,11 +40,11 @@ export const UserOAuth = () => {
         onClick={() => onAuth("google")}
       >
         {loading.google ? (
-          <Icons.spinner className="mr-2 size-4 animate-spin" />
+          <Icons.spinner className="ml-2 size-5 animate-spin" />
         ) : (
-          <Icons.google className="mr-2 size-4" />
+          <Google className="ml-2 size-5" />
         )}
-        Google
+        گوگل
       </Button>
     </div>
   )

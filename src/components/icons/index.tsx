@@ -1,16 +1,5 @@
 import Link from "next/link"
-import {
-  BadgeCheckIcon,
-  Bookmark,
-  CommandIcon,
-  FileCogIcon,
-  GithubIcon,
-  LayoutDashboard,
-  Link2,
-  Menu,
-  PhoneIcon,
-  XIcon,
-} from "lucide-react"
+import { Bookmark, Menu } from "iconoir-react"
 
 type IconProps = React.HTMLAttributes<SVGElement>
 
@@ -509,8 +498,6 @@ export const Icons = {
   home: HomeIcon,
   search: SearchIcon,
   notification: BellIcon,
-  dashboard: LayoutDashboard,
-  projects: CommandIcon,
   products: ({ ...props }) => (
     <svg
       width="20"
@@ -546,13 +533,9 @@ export const Icons = {
   rocket: RocketIcon,
   moon: MoonIcon,
   sun: SunIcon,
-  file: FileCogIcon,
-  phone: PhoneIcon,
-  check: BadgeCheckIcon,
   right: ArrowRight,
   left: ArrowLeft,
   upload: UploadIcon,
-  github: GithubIcon,
   new: NewPost,
   web: WebIcon,
   option: ({ className, ...props }: IconProps) => (
@@ -597,11 +580,9 @@ export const Icons = {
     </svg>
   ),
   loading: ReloadIcon,
-  link: Link2,
   menu: Menu,
   comments: MessagesIcon,
   saved: Bookmark,
-  close: XIcon,
   explore: ExploreIcon,
   twitter: (props: IconProps) => (
     <svg

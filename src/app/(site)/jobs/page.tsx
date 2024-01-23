@@ -1,5 +1,6 @@
 import { TextField } from "@components/common/TextField"
 import { Button } from "@ui/button"
+import { Input } from "@ui/input"
 import { Bookmark, City, DollarCircle, MapPin, Suitcase } from "iconoir-react"
 
 import {
@@ -14,10 +15,10 @@ export default function JobsPage() {
   return (
     <section className="space-y-8">
       <div className="flex gap-4">
-        <aside className="sticky top-20 h-fit w-60 space-y-4 rounded-lg border bg-background p-4 shadow-sm">
+        <aside className="sticky top-20 h-fit w-64 space-y-4 rounded-lg border bg-background p-4 shadow-sm">
           <h1 className="text-2xl font-bold text-primary">مشاغل</h1>
-          <TextField label="عنوان شغل" />
-          <TextField label="محل سکونت" />
+          <Input placeholder="عنوان شغل" />
+          <Input placeholder="محل سکونت" />
           <Select>
             <SelectTrigger>
               <SelectValue placeholder="دسته بندی" />

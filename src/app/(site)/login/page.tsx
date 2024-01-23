@@ -18,20 +18,20 @@ export default async function LoginPage() {
   if (session) return redirect("/dashboard")
 
   return (
-    <div className="flex min-h-screen items-center justify-center">
+    <div className="flex h-full items-center justify-center md:my-32">
       <div className="w-full max-w-sm space-y-3">
         <div className="space-y-1 pb-2">
           <h1 className="flex items-center gap-2 text-2xl font-semibold [&>svg]:size-6">
             <LogoIcon />
-            Sign In
+            وارد شوید
           </h1>
           <p className="text-sm text-muted-foreground">
-            to continue use insta app
+            برای ادامه به دسترسی همکاری وارد حساب کاربری شوید
           </p>
         </div>
-        <Input type="text" placeholder="email address" />
-        <Button className="w-full">Sign In</Button>
-        <TextLine text="sign in with" />
+        <Input type="text" placeholder="آدرس ایمیل" />
+        <Button className="w-full">ورود به حساب</Button>
+        <TextLine text="لاگین شدن با" />
         <UserOAuth />
       </div>
     </div>

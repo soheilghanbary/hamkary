@@ -1,7 +1,8 @@
 import Link from "next/link"
 import { icons, LogoIcon } from "@components/icons/iconoir"
 import { ModeToggle } from "@components/mode-toggle"
-import { Button } from "@ui/button"
+import { cn } from "@lib/utils"
+import { buttonVariants } from "@ui/button"
 
 import styles from "./header.module.scss"
 
@@ -19,11 +20,15 @@ export const Header = () => {
           <Link href={"/top-companies"}>برترین شرکت ها</Link>
           <Link href={"/about"}>درباره ما</Link>
           <Link href={"/contact"}>تماس با ما</Link>
+          <Link href={"/login"}>وارد شوید</Link>
         </div>
-        <Button variant={"outline"}>
-          <icons.user className="ml-2 size-4" />
+        <Link
+          href={"/tonycore"}
+          className={cn(buttonVariants({ variant: "outline" }))}
+        >
+          <icons.user className="ml-1.5 size-4" />
           حساب کاربری
-        </Button>
+        </Link>
         <ModeToggle />
       </nav>
     </header>
